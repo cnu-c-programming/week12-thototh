@@ -6,9 +6,8 @@ typedef struct student {
     int score;
 } Student;
 
-int main() {
+int main(int argc, const char* argv[]) {
     FILE* fp = fopen("student.txt", "r");
-
     int count = 0;
     Student students[64];
 
