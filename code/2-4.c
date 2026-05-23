@@ -9,8 +9,7 @@ int main(int argc, const char* argv[]) {
     int alpha[26] = {0};
     char c;
 
-    while (fgetc(fp) != EOF){
-        c = fgetc(fp);
+    while ((c=fgetc(fp)) != EOF){
         if (c >= 'a' && c <= 'z') {
             alpha[c - 'a']++;
         }
