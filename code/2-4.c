@@ -10,6 +10,7 @@ int main(int argc, const char* argv[]) {
     char c;
 
     while (fgetc(fp) != EOF) {
+        c = fgetc(fp);
         if (c >= 'a' && c <= 'z') {
             alpha[c - 'a']++;
         }
